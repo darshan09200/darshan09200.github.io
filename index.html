@@ -1,821 +1,439 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth dark" data-theme="dark">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=2.0, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Darshan Jain — Mobile & Web Engineer</title>
 
-    <link rel="stylesheet" href="./add-ons/bootstrap/bootstrap.min.css">
+	<meta property="og:title" content="Darshan Jain — Mobile & Web Engineer" />
+	<meta property="og:description"
+		content="I build performant, reliable, developer-friendly experiences across React Native, TypeScript, and the modern web." />
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="/images/social-card.png" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Darshan Jain — Mobile & Web Engineer" />
+	<meta name="twitter:description" content="Mobile & Web Engineer. React Native • TypeScript • DX." />
+	<meta name="twitter:image" content="/images/social-card.png" />
+	<meta name="description"
+		content="Mobile & Web Engineer focused on performant, reliable, developer-friendly experiences. React Native, TypeScript, modern web." />
 
-    <link rel="stylesheet" href="./add-ons/aos/aos.css">
-
-    <link rel="stylesheet" href="./css/style.css">
-
+	<!-- Fonts -->
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap"
+		rel="stylesheet" />
+	<link rel="stylesheet" href="/css/styles.css" />
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="75" id="home">
+<body class="bg-base-900 text-slate-200 font-sans selection:bg-accent/20">
+	<!-- Background accents -->
+	<div class="fixed inset-0 -z-10 bg-radial"></div>
 
-    <div class="preloaders"></div>
-    <div class="bg"></div>
-    <div class="main">
-        <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
-            <a class="navbar-brand d-block d-sm-block d-md-none" href="#home">Darshan Jain</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-md-auto mr-md-auto text-center">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about-me">About me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#achievements">Achievements</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact-me">Contact me</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+	<!-- Header -->
+	<header class="sticky top-0 z-50 backdrop-blur supports-backdrop-filter:bg-base-900/60 border-b border-white/5">
+		<div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
+			<a href="#home" class="font-mono text-slate-100 text-sm tracking-wide">
+				<span class="inline-flex items-center gap-2">
+					<span class="h-2 w-2 rounded-full bg-accent animate-pulse"></span>
+					Darshan Jain
+				</span>
+			</a>
+			<nav class="hidden md:flex items-center gap-6 text-sm">
+				<a href="#about" class="hover:text-white/90">About</a>
+				<a href="#work" class="hover:text-white/90">Work</a>
+				<a href="#skills" class="hover:text-white/90">Skills</a>
+				<a href="#experience" class="hover:text-white/90">Experience</a>
+				<a href="#contact"
+					class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 hover:border-accent/40 hover:shadow-glow">Contact</a>
+			</nav>
+		</div>
+	</header>
 
-        <div class="landing-content">
-            <div id="typed-strings" class="text-center">
-                <p class="mb-4 display-4 px-4 py-2"><span>Darshan Jain</span></p>
-                <p class="h3 px-3 py-2">
-                    <span>I work on</span>
-                    <span id="typed"></span>
-                </p>
-            </div>
-        </div>
+	<!-- Hero -->
+	<section id="home" class="relative">
+		<div class="mx-auto max-w-6xl px-4">
+			<div class="grid md:grid-cols-3 gap-10 items-center py-16 md:py-24">
+				<div class="md:col-span-2">
+					<p class="font-mono text-accent text-sm">Hi, I’m Darshan</p>
+					<h1 class="mt-3 text-4xl md:text-5xl font-semibold text-white leading-tight">
+						Mobile & Web Engineer
+					</h1>
+					<p class="mt-4 text-slate-300 max-w-xl">
+						I build performant, reliable, and developer‑friendly experiences
+						across React Native, TypeScript, and modern web platforms. I care
+						deeply about DX, architecture, and shipping stable software.
+					</p>
+					<div class="mt-8 flex flex-wrap gap-3">
+						<a href="#work"
+							class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-accent text-base-900 font-medium hover:shadow-glow">View
+							Work</a>
+						<a href="https://github.com/darshan09200" target="_blank" rel="noopener noreferrer"
+							class="inline-flex items-center gap-2 px-4 py-2 rounded-xl border border-white/15 hover:border-accent/50">GitHub
+							↗</a>
+					</div>
+					<div class="mt-6 font-mono text-xs text-slate-400">
+						<div>
+							&gt; npx create-darshan-portfolio
+							<span class="text-accent">done</span> ✅
+						</div>
+					</div>
+				</div>
+				<div class="relative">
+					<div class="absolute inset-0 -z-10 blur-3xl bg-accent/15"></div>
+					<img src="images/darshan09200.png" alt="Portrait of Darshan Jain"
+						class="h-40 w-40 rounded-full bg-accent/10 border border-accent/30 shadow-glow object-cover" />
+				</div>
+			</div>
+		</div>
+	</section>
 
-        <div id="about-me">
-            <div class="bg-container" style="background-image: url('./svg/code_typing.svg');">
-                <div class="container">
-                    <div class="row">
-                        <div class="offset-sm-1 col-sm-10 text-center mt-4 mb-2">
-                            <span class="h1 font-weight-bold">
-                                Skills
-                            </span>
-                        </div>
-                    </div>
-                    <div class="row mt-2">
+	<!-- About -->
+	<section id="about" class="py-16 md:py-24 border-t border-white/5 bg-base-800/30">
+		<div class="mx-auto max-w-6xl px-4 grid md:grid-cols-12 gap-10">
+			<div class="md:col-span-5">
+				<h2 class="text-2xl font-semibold text-white">About</h2>
+			</div>
+			<div class="md:col-span-7 text-slate-300 leading-relaxed">
+				<p>I’m a curious, process-driven engineer who loves transforming ideas into
+					reliable, scalable products. My approach blends structure and creativity —
+					clean architecture on the inside, smooth experiences on the outside.</p>
+				<p class="mt-4">I enjoy working across the stack but feel most at home in
+					TypeScript and React Native. Whether it’s designing a new component
+					system, fine‑tuning build pipelines, or adding tiny quality‑of‑life
+					features for developers, I like making things feel effortless.</p>
+				<ul class="mt-4 grid sm:grid-cols-2 gap-2 text-sm">
+					<li class="flex items-start gap-2"><span class="mt-1.5 size-1.5 rounded-full bg-accent"></span><span>Crafting
+							elegant, maintainable codebases</span></li>
+					<li class="flex items-start gap-2"><span class="mt-1.5 size-1.5 rounded-full bg-accent"></span><span>Building
+							intuitive interfaces and thoughtful UX</span></li>
+					<li class="flex items-start gap-2"><span
+							class="mt-1.5 size-1.5 rounded-full bg-accent"></span><span>Optimizing
+							performance and developer experience</span></li>
+					<li class="flex items-start gap-2"><span
+							class="mt-1.5 size-1.5 rounded-full bg-accent"></span><span>Automating
+							repetitive tasks just for fun</span></li>
+				</ul>
+				<p class="mt-4">Outside of work, you’ll probably find me experimenting with
+					new design ideas, tweaking personal tools, or trying to automate something
+					that really doesn’t need automating — just because it’s fun.</p>
+			</div>
+		</div>
+	</section>
 
-                        <div class="offset-sm-1 col-sm-10 text-center mt-3" data-aos="fade-up">
-                            <span class="heading h3">Programming Languages</span>
-                        </div>
+	<!-- Work / Projects -->
+	<section id="work" class="py-16 md:py-24">
+		<div class="mx-auto max-w-6xl px-4">
+			<div class="flex items-end justify-between gap-6">
+				<h2 class="text-2xl font-semibold text-white">Selected Work</h2>
+				<a href="https://github.com/darshan09200" target="_blank" rel="noopener noreferrer"
+					class="text-sm text-accent hover:underline">See all on GitHub ↗</a>
+			</div>
 
-                        <div class="offset-md-1 col-md-5 left" data-aos="fade-up">
-                            <div class="content container">
-                                <div class="row mt-3 mb-3">
-                                    <div class="col-md-4 mb-2">
-                                        <div class="title text-center float-md-right">
-                                            <img class="img-fluid mx-auto" src="./images/C.png" alt="" style="height: 50px;">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-8 mt-auto mb-auto">
-                                        <div class="progress" style="height: 1.5rem;">
-                                            <div class="progress-bar bg-success" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+			<div class="mt-8 grid sm:grid-cols-2 gap-6">
+				<!-- Vetster App -->
+				<article
+					class="group rounded-2xl bg-white/5 border border-white/10 p-5 hover:border-accent/40 hover:shadow-glow transition">
+					<header class="flex items-center justify-between">
+						<h3 class="text-white font-medium">Vetster Mobile App</h3>
+						<span class="text-[10px] font-mono text-slate-400">React Native</span>
+					</header>
+					<p class="mt-2 text-sm text-slate-300">
+						Led a React Native rebuild improving performance and subscription
+						conversion. Introduced CI/CD hardening, native integrations, and
+						better DX.
+					</p>
+					<div class="mt-4 flex flex-wrap gap-2 text-[11px] font-mono">
+						<span class="px-2 py-1 rounded bg-base-800/70 border border-white/10">TypeScript</span>
+						<span class="px-2 py-1 rounded bg-base-800/70 border border-white/10">React
+							Native</span>
+						<span class="px-2 py-1 rounded bg-base-800/70 border border-white/10">CI/CD</span>
+					</div>
+					<div class="mt-4 flex flex-wrap gap-3 text-sm">
+						<a href="https://www.vetster.com" target="_blank" rel="noopener noreferrer"
+							class="px-3 py-1.5 rounded-lg border border-white/15 hover:border-accent/50">Website
+							↗</a>
+					</div>
+				</article>
 
-                                <div class="row mt-3 mb-3">
-                                    <div class="col-md-4 mb-2">
-                                        <div class="title text-center float-md-right">
-                                            <img class="img-fluid" src="./images/C++.png" alt="" style="height: 50px;">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-8 mt-auto mb-auto">
-                                        <div class="progress" style="height: 1.5rem;">
-                                            <div class="progress-bar bg-success" role="progressbar" style="width: 63%" aria-valuenow="63" aria-valuemin="0" aria-valuemax="100">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+				<!-- RN Global Exception Handler -->
+				<article
+					class="group rounded-2xl bg-white/5 border border-white/10 p-5 hover:border-accent/40 hover:shadow-glow transition">
+					<header class="flex items-center justify-between">
+						<h3 class="text-white font-medium">
+							react-native-global-exception-handler
+						</h3>
+						<span class="text-[10px] font-mono text-slate-400">Library</span>
+					</header>
+					<p class="mt-2 text-sm text-slate-300">
+						Cross‑platform exception handling with modern architecture support
+						and native crash simulation utilities.
+					</p>
+					<div class="mt-4 flex flex-wrap gap-2 text-[11px] font-mono">
+						<span class="px-2 py-1 rounded bg-base-800/70 border border-white/10">iOS</span>
+						<span class="px-2 py-1 rounded bg-base-800/70 border border-white/10">Android</span>
+						<span class="px-2 py-1 rounded bg-base-800/70 border border-white/10">React
+							Native</span>
+					</div>
+					<div class="mt-4 flex flex-wrap gap-3 text-sm">
+						<a href="https://github.com/darshan09200/react-native-global-exception-handler" target="_blank"
+							rel="noopener noreferrer"
+							class="px-3 py-1.5 rounded-lg border border-white/15 hover:border-accent/50">GitHub
+							↗</a>
+						<a href="https://darshan09200.github.io/react-native-global-exception-handler/" target="_blank"
+							rel="noopener noreferrer"
+							class="px-3 py-1.5 rounded-lg border border-white/15 hover:border-accent/50">Docs
+							↗</a>
+					</div>
+				</article>
 
-                                <div class="row mt-3 mb-3">
-                                    <div class="col-md-4 mb-2">
-                                        <div class="title text-center float-md-right">
-                                            <img class="img-fluid" src="./images/java.png" alt="" style="height: 50px;">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-8 mt-auto mb-auto">
-                                        <div class="progress" style="height: 1.5rem;">
-                                            <div class="progress-bar bg-primary" role="progressbar" style="width: 58%" aria-valuenow="58" aria-valuemin="0" aria-valuemax="100">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+				<!-- ESLint Plugin -->
+				<article
+					class="group rounded-2xl bg-white/5 border border-white/10 p-5 hover:border-accent/40 hover:shadow-glow transition">
+					<header class="flex items-center justify-between">
+						<h3 class="text-white font-medium">
+							eslint-plugin-lodash-specific-import
+						</h3>
+						<span class="text-[10px] font-mono text-slate-400">Tooling</span>
+					</header>
+					<p class="mt-2 text-sm text-slate-300">
+						Rule set to enforce granular lodash imports for leaner bundles and
+						clearer intent.
+					</p>
+					<div class="mt-4 flex flex-wrap gap-2 text-[11px] font-mono">
+						<span class="px-2 py-1 rounded bg-base-800/70 border border-white/10">ESLint</span>
+						<span class="px-2 py-1 rounded bg-base-800/70 border border-white/10">DX</span>
+						<span class="px-2 py-1 rounded bg-base-800/70 border border-white/10">Performance</span>
+					</div>
+					<div class="mt-4 flex flex-wrap gap-3 text-sm">
+						<a href="https://github.com/darshan09200/eslint-plugin-lodash-specific-import" target="_blank"
+							rel="noopener noreferrer"
+							class="px-3 py-1.5 rounded-lg border border-white/15 hover:border-accent/50">GitHub
+							↗</a>
+						<a href="https://www.npmjs.com/package/eslint-plugin-lodash-specific-import" target="_blank"
+							rel="noopener noreferrer" class="px-3 py-1.5 rounded-lg border border-white/15 hover:border-accent/50">npm
+							↗</a>
+					</div>
+				</article>
+			</div>
+		</div>
+	</section>
 
-                            </div>
-                        </div>
+	<!-- Skills -->
+	<section id="skills" class="py-16 md:py-24 border-t border-white/5 bg-base-800/30">
+		<div class="mx-auto max-w-6xl px-4">
+			<h2 class="text-2xl font-semibold text-white">Skills</h2>
 
-                        <div class="col-md-5 right d-none d-sm-none d-md-block d-lg-block d-xl-block" data-aos="fade-up">
-                            <div class="content container">
-                                <div class="row mt-3 mb-3">
-                                    <div class="col-md-8 mt-auto mb-auto">
-                                        <div class="progress" style="height: 1.5rem;">
-                                            <div class="progress-bar bg-warning" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="title text-center float-md-right">
-                                            <img class="img-fluid" src="./images/python.png" alt="" style="height: 50px;">
-                                        </div>
-                                    </div>
-                                </div>
+			<div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+				<div class="rounded-xl bg-white/5 border border-white/10 p-4 hover:border-accent/50 hover:shadow-glow">
+					<h3 class="text-sm font-semibold text-white">Mobile</h3>
+					<p class="mt-2 text-sm text-slate-300">
+						React Native, iOS (Swift), Android (Java/Kotlin), New Architecture
+					</p>
+				</div>
+				<div class="rounded-xl bg-white/5 border border-white/10 p-4 hover:border-accent/50 hover:shadow-glow">
+					<h3 class="text-sm font-semibold text-white">Tooling & DX</h3>
+					<p class="mt-2 text-sm text-slate-300">
+						TypeScript, TurboRepo, pnpm, ESLint, Jest, GitHub Actions, CI/CD
+					</p>
+				</div>
+				<div class="rounded-xl bg-white/5 border border-white/10 p-4 hover:border-accent/50 hover:shadow-glow">
+					<h3 class="text-sm font-semibold text-white">Web</h3>
+					<p class="mt-2 text-sm text-slate-300">
+						React, Next.js, Tailwind, MDX
+					</p>
+				</div>
+				<div class="rounded-xl bg-white/5 border border-white/10 p-4 hover:border-accent/50 hover:shadow-glow">
+					<h3 class="text-sm font-semibold text-white">Practices</h3>
+					<p class="mt-2 text-sm text-slate-300">
+						Monorepos, Code Quality, Performance, Accessibility
+					</p>
+				</div>
+				<div class="rounded-xl bg-white/5 border border-white/10 p-4 hover:border-accent/50 hover:shadow-glow">
+					<h3 class="text-sm font-semibold text-white">Backend</h3>
+					<p class="mt-2 text-sm text-slate-300">
+						Node.js, Firebase, Supabase, SQL
+					</p>
+				</div>
+				<div class="rounded-xl bg-white/5 border border-white/10 p-4 hover:border-accent/50 hover:shadow-glow">
+					<h3 class="text-sm font-semibold text-white">Observability</h3>
+					<p class="mt-2 text-sm text-slate-300">
+						Sentry, FullStory, Crashlytics
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
 
-                                <div class="row mt-3 mb-3">
-                                    <div class="col-md-8 mt-auto mb-auto">
-                                        <div class="progress" style="height: 1.5rem;">
-                                            <div class="progress-bar bg-warning" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="title text-center float-md-left">
-                                            <img class="img-fluid" src="./images/asp.net.png" alt="" style="height: 50px;">
-                                        </div>
-                                    </div>
-                                </div>
+	<!-- Experience -->
+	<section id="experience" class="py-16 md:py-24">
+		<div class="mx-auto max-w-6xl px-4">
+			<h2 class="text-2xl font-semibold text-white">Experience</h2>
 
-                            </div>
-                        </div>
+			<ol class="mt-8 space-y-4">
+				<li class="rounded-2xl bg-white/5 border border-white/10 p-5">
+					<div class="flex items-center justify-between gap-4">
+						<h3 class="text-white font-medium">Mobile Software Engineer —
+							Vetster</h3>
+						<span class="text-xs font-mono text-slate-400">May 2023 – Present ·
+							Toronto, Canada</span>
+					</div>
+					<ul class="mt-2 list-disc list-inside text-sm text-slate-300 space-y-1">
+						<li>Lead the rebuild of the Vetster mobile app using React Native and
+							TypeScript, resulting in faster performance and improved subscription
+							conversions.</li>
+						<li>Architected modular features and implemented new native bridges
+							compatible with the React Native New Architecture.</li>
+						<li>Enhanced developer workflows with improved CI/CD pipelines, automated
+							testing, and reusable components.</li>
+						<li>Collaborated cross-functionally with design and backend teams to
+							ensure reliability and maintainability at scale.</li>
+					</ul>
+				</li>
 
-                        <div class="col-md-5 d-block d-sm-block d-md-none d-lg-none d-xl-none" data-aos="fade-up">
-                            <div class="content container">
-                                <div class="row mt-3 mb-3">
-                                    <div class="col-md-4 mb-2">
-                                        <div class="title text-center float-md-right">
-                                            <img class="img-fluid" src="./images/python.png" alt="" style="height: 50px;">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-8 mt-auto mb-auto">
-                                        <div class="progress" style="height: 1.5rem;">
-                                            <div class="progress-bar bg-warning" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+				<li class="rounded-2xl bg-white/5 border border-white/10 p-5">
+					<div class="flex items-center justify-between gap-4">
+						<h3 class="text-white font-medium">Senior React Native Developer —
+							Fugetron Corporation</h3>
+						<span class="text-xs font-mono text-slate-400">Apr 2021 – May 2023 ·
+							Mumbai, India</span>
+					</div>
+					<ul class="mt-2 list-disc list-inside text-sm text-slate-300 space-y-1">
+						<li>Led a team of 5 developers to build, test, and release multiple
+							high-performance mobile applications for clients across finance and
+							retail sectors.</li>
+						<li>Improved app startup time by over 60% through optimization and bundle
+							analysis.</li>
+						<li>Introduced best practices in linting, TypeScript, and CI/CD
+							automation across all projects.</li>
+						<li>Developed native modules for platform-specific features and
+							streamlined dependency management.</li>
+					</ul>
+				</li>
 
-                                <div class="row mt-3 mb-3">
-                                    <div class="col-md-4 mb-2">
-                                        <div class="title text-center float-md-right">
-                                            <img class="img-fluid" src="./images/asp.net.png" alt="" style="height: 50px;">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-8 mt-auto mb-auto">
-                                        <div class="progress" style="height: 1.5rem;">
-                                            <div class="progress-bar bg-warning" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+				<li class="rounded-2xl bg-white/5 border border-white/10 p-5">
+					<div class="flex items-center justify-between gap-4">
+						<h3 class="text-white font-medium">Software Developer — Bomblr
+							Technologies</h3>
+						<span class="text-xs font-mono text-slate-400">
+							Apr 2020 – Jan 2021 · Mumbai, India</span>
+					</div>
+					<ul class="mt-2 list-disc list-inside text-sm text-slate-300 space-y-1">
+						<li>Built cross-platform React Native apps with offline-first
+							capabilities using Firebase and SQLite.</li>
+						<li>Implemented authentication flows, push notifications, and data
+							caching for better user experience.</li>
+						<li>Collaborated directly with founders on early-stage product design and
+							iteration cycles.</li>
+					</ul>
+				</li>
+			</ol>
 
-                            </div>
-                        </div>
+			<div class="mt-10 grid md:grid-cols-2 gap-6">
+				<div class="rounded-2xl bg-white/5 border border-white/10 p-5">
+					<h3 class="text-white font-medium">Education</h3>
+					<ul class="mt-2 text-sm text-slate-300 space-y-1">
+						<li><span class="text-white">Lambton College</span> — Postgraduate,
+							Mobile Applications Design & Development (2022 – 2024)</li>
 
+						<li><span class="text-white">Mumbai University</span> — B.Sc. Information
+							Technology (2017 – 2021), Dean’s Honour Lists</li>
+					</ul>
+				</div>
+				<div class="rounded-2xl bg-white/5 border border-white/10 p-5">
+					<h3 class="text-white font-medium">Highlights</h3>
+					<ul class="mt-2 text-sm text-slate-300 space-y-1 list-disc list-inside">
+						<li>Led a major mobile app rebuild improving performance and conversions
+							by 60%.</li>
+						<li>Published open-source libraries:
+							react-native-global-exception-handler and
+							eslint-plugin-lodash-specific-import.</li>
+						<li>Developed automated CI/CD pipelines with GitHub Actions and improved
+							developer onboarding workflows.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
 
-                        <div class="offset-1 col-10 text-center mt-3" data-aos="fade-up">
-                            <span class="heading h3">Server-Side Scripting Languages</span>
-                        </div>
+	<!-- Writing -->
+	<section id="writing" class="py-16 md:py-24 border-t border-white/5 bg-base-800/30">
+		<div class="mx-auto max-w-6xl px-4">
+			<h2 class="text-2xl font-semibold text-white">Writing</h2>
+			<div class="mt-6 grid md:grid-cols-3 gap-4">
+				<a href="#" class="rounded-xl bg-white/5 border border-white/10 p-4 hover:border-accent/50 hover:shadow-glow">
+					<h3 class="text-white text-sm font-semibold">Optimizing RN builds with TurboRepo</h3>
+					<p class="mt-2 text-sm text-slate-300">Practical steps to speed up CI and local dev in monorepos.
+					</p>
+				</a>
+				<a href="#" class="rounded-xl bg-white/5 border border-white/10 p-4 hover:border-accent/50 hover:shadow-glow">
+					<h3 class="text-white text-sm font-semibold">Designing stable exception handling</h3>
+					<p class="mt-2 text-sm text-slate-300">Bridging native + JS, new arch considerations, and DX.</p>
+				</a>
+				<a href="#" class="rounded-xl bg-white/5 border border-white/10 p-4 hover:border-accent/50 hover:shadow-glow">
+					<h3 class="text-white text-sm font-semibold">TypeScript ergonomics for scale</h3>
+					<p class="mt-2 text-sm text-slate-300">Configs, strictness, and patterns that keep teams fast.</p>
+				</a>
+			</div>
+		</div>
+	</section>
 
-                        <div class="offset-md-3 col-md-5 left" data-aos="fade-up">
-                            <div class="content container">
-                                <div class="row mt-3 mb-3">
-                                    <div class="col-md-4 mb-2">
-                                        <div class="title text-center float-md-right">
-                                            <img class="img-fluid" src="./images/nodejs.png" alt="" style="height: 50px;">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-8 mt-auto mb-auto">
-                                        <div class="progress" style="height: 1.5rem;">
-                                            <div class="progress-bar bg-success" role="progressbar" style="width: 73%" aria-valuenow="73" aria-valuemin="0" aria-valuemax="100">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+	<!-- Contact -->
+	<section id="contact" class="py-16 md:py-24 border-t border-white/5 bg-base-800/30">
+		<div class="mx-auto max-w-6xl px-4 text-center">
+			<h2 class="text-2xl font-semibold text-white">
+				Let’s build something meaningful
+			</h2>
+			<p class="mt-3 text-slate-300">
+				Toronto, ON · Open to interesting problems and collaborations.
+			</p>
+			<div class="mt-6 flex items-center justify-center gap-3">
+				<a class="px-4 py-2 rounded-xl bg-accent text-base-900 font-medium hover:shadow-glow"
+					href="mailto:djainj86@gmail.com">Email</a>
+				<a class="px-4 py-2 rounded-xl border border-white/15 hover:border-accent/50" target="_blank"
+					rel="noopener noreferrer" href="https://www.linkedin.com/in/darshan09200">LinkedIn ↗</a>
+				<a class="px-4 py-2 rounded-xl border border-white/15 hover:border-accent/50" target="_blank"
+					rel="noopener noreferrer" href="https://github.com/darshan09200">GitHub
+					↗</a>
+			</div>
+			<p class="mt-10 text-xs text-slate-400">
+				Built with Next.js energy, but this page is plain HTML + Tailwind for
+				simplicity ✨
+			</p>
+		</div>
+	</section>
 
-                        <div class="offset-1 col-10 text-center mt-2" data-aos="fade-up">
-                            <span class="heading h4">Node.js Frameworks</span>
-                        </div>
+	<footer class="py-10 text-center text-xs text-slate-500">
+		© 2025 Darshan Jain. Crafted with care.
+	</footer>
 
-                        <div class="offset-md-1 col-md-5 left" data-aos="fade-up">
-                            <div class="content container">
+	<script>
+		// Tiny enhancement: highlight current section link on scroll
+		const links = [...document.querySelectorAll('header nav a[href^="#"]')];
+		const sections = links
+			.map((a) => document.querySelector(a.getAttribute("href")))
+			.filter(Boolean);
+		const active = (id) =>
+			links.forEach((a) =>
+				a.classList.toggle("text-accent", a.getAttribute("href") === "#" + id)
+			);
 
-                                <div class="row mt-3 mb-3">
-                                    <div class="col-md-4 mb-2">
-                                        <div class="title text-center float-md-right">
-                                            <img class="img-fluid" src="./images/expressjs.png" alt="" style="height: 50px;">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-8 mt-auto mb-auto">
-                                        <div class="progress" style="height: 1.5rem;">
-                                            <div class="progress-bar bg-primary" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+		const obs = new IntersectionObserver(
+			(entries) => {
+				entries.forEach((e) => {
+					if (e.isIntersecting) active(e.target.id);
+				});
+			},
+			{ rootMargin: "-40% 0px -55% 0px", threshold: 0.1 }
+		);
 
+		sections.forEach((s) => obs.observe(s));
 
-                        <div class="col-md-5 right d-none d-sm-none d-md-block d-lg-block d-xl-block" data-aos="fade-up">
-                            <div class="content container">
-                                <div class="row mt-3 mb-3">
-                                    <div class="col-md-8 mt-auto mb-auto">
-                                        <div class="progress" style="height: 1.5rem;">
-                                            <div class="progress-bar bg-warning" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="title text-center float-md-left">
-                                            <img class="img-fluid" src="./images/electronjs.png" alt="" style="height: 50px;">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-5 d-block d-sm-block d-md-none d-lg-none d-xl-none" data-aos="fade-up">
-                            <div class="content container">
-                                <div class="row mt-3 mb-3">
-                                    <div class="col-md-4 mb-2">
-                                        <div class="title text-center float-md-right">
-                                            <img class="img-fluid" src="./images/electronjs.png" alt="" style="height: 50px;">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-8 mt-auto mb-auto">
-                                        <div class="progress" style="height: 1.5rem;">
-                                            <div class="progress-bar bg-warning" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="offset-1 col-10 text-center mt-3" data-aos="fade-up">
-                            <span class="heading h3">Database</span>
-                        </div>
-
-                        <div class="offset-md-1 col-md-5 left" data-aos="fade-up">
-                            <div class="content container">
-                                <div class="row mt-3 mb-3">
-                                    <div class="col-md-4 mb-2">
-                                        <div class="title text-center float-md-right">
-                                            <img class="img-fluid" src="./images/firebase.png" alt="" style="height: 50px;">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-8 mt-auto mb-auto">
-                                        <div class="progress" style="height: 1.5rem;">
-                                            <div class="progress-bar bg-primary" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-5 right d-none d-sm-none d-md-block d-lg-block d-xl-block" data-aos="fade-up">
-                            <div class="content container">
-                                <div class="row mt-3 mb-3">
-                                    <div class="col-md-8 mt-auto mb-auto">
-                                        <div class="progress" style="height: 1.5rem;">
-                                            <div class="progress-bar bg-primary" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="title text-center float-md-left">
-                                            <img class="img-fluid" src="./images/sql.png" alt="" style="height: 50px;">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-5 d-block d-sm-block d-md-none d-lg-none d-xl-none" data-aos="fade-up">
-                            <div class="content container">
-                                <div class="row mt-3 mb-3">
-                                    <div class="col-md-4 mb-2">
-                                        <div class="title text-center float-md-right">
-                                            <img class="img-fluid" src="./images/sql.png" alt="" style="height: 50px;">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-8 mt-auto mb-auto">
-                                        <div class="progress" style="height: 1.5rem;">
-                                            <div class="progress-bar bg-primary" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="offset-1 col-10 text-center mt-3" data-aos="fade-up">
-                            <span class="heading h3">Web Development Languages</span>
-                        </div>
-
-                        <div class="offset-md-1 col-md-5 left" data-aos="fade-up">
-                            <div class="content container">
-                                <div class="row mt-3 mb-3">
-                                    <div class="col-md-4 mb-2">
-                                        <div class="title text-center float-md-right">
-                                            <img class="img-fluid" src="./images/html5.png" alt="" style="height: 50px;">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-8 mt-auto mb-auto">
-                                        <div class="progress" style="height: 1.5rem;">
-                                            <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row mt-3 mb-3">
-                                    <div class="col-md-4 mb-2">
-                                        <div class="title text-center float-md-right">
-                                            <img class="img-fluid" src="./images/css.png" alt="" style="height: 50px;">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-8 mt-auto mb-auto">
-                                        <div class="progress" style="height: 1.5rem;">
-                                            <div class="progress-bar bg-primary" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-5 right d-none d-sm-none d-md-block d-lg-block d-xl-block" data-aos="fade-up">
-                            <div class="content container">
-                                <div class="row mt-3 mb-3">
-                                    <div class="col-md-8 mt-auto mb-auto">
-                                        <div class="progress" style="height: 1.5rem;">
-                                            <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="title text-center float-md-left">
-                                            <img class="img-fluid" src="./images/bootstrap.png" alt="" style="height: 50px;">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row mt-3 mb-3">
-                                    <div class="col-md-8 mt-auto mb-auto">
-                                        <div class="progress" style="height: 1.5rem;">
-                                            <div class="progress-bar bg-primary" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="title text-center float-md-left">
-                                            <img class="img-fluid" src="./images/javascript.png" alt="" style="height: 50px;">
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="col-md-5 d-block d-sm-block d-md-none d-lg-none d-xl-none" data-aos="fade-up">
-                            <div class="content container">
-                                <div class="row mt-3 mb-3">
-                                    <div class="col-md-4 mb-2">
-                                        <div class="title text-center float-md-right">
-                                            <img class="img-fluid" src="./images/bootstrap.png" alt="" style="height: 50px;">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-8 mt-auto mb-auto">
-                                        <div class="progress" style="height: 1.5rem;">
-                                            <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row mt-3 mb-3">
-                                    <div class="col-md-4 mb-2">
-                                        <div class="title text-center float-md-right">
-                                            <img class="img-fluid" src="./images/javascript.png" alt="" style="height: 50px;">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-8 mt-auto mb-auto">
-                                        <div class="progress" style="height: 1.5rem;">
-                                            <div class="progress-bar bg-primary" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="offset-sm-1 col-sm-10 text-center mt-4 mb-2">
-                        <span class="h1 font-weight-bold">
-                            A little about myself
-                        </span>
-                    </div>
-                </div>
-                <div class="row mt-4">
-                    <div class="offset-lg-1 col-lg-4 text-center float-md-right" data-aos="fade-left">
-                        <img class="img-fluid" src="./svg/profile.svg" alt="">
-                    </div>
-                    <div class="col-lg-6 text-left" data-aos="fade-right">
-                        <div class="mt-3 pl-1 text-center mt-auto mb-auto">
-                            <img src="./images/Darshan.jpg" alt="" class="img-fluid" style="height: 200px;">
-                            <p class="mt-2 h4">
-                                Highly motivated, performance oriented student looking for a job as a software developer mainly as back-end developer at your prestigious company.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <div id="projects">
-            <div class="container">
-                <div class="row">
-                    <div class="offset-sm-1 col-sm-10 text-center mt-4 mb-2">
-                        <span class="h1 font-weight-bold">
-                            Successful Creations
-                        </span>
-                    </div>
-                </div>
-                <div class="row mt-2 github">
-
-                    <div class=" offset-md-1 col-md-10">
-                        <div class="row" data-aos="fade-up">
-                            <div class="offset-lg-1 col-lg-5 mr-md-2 mt-4">
-                                <div class="card">
-                                    <!-- <img src="./images/asp.net.png" class="img-fluid card-img-top" alt="..."> -->
-                                    <div class="card-header text-center">
-                                        <span class="h4">Antarang - 2019</span>
-                                    </div>
-                                    <div class="card-body">
-                                        <p class="card-text text-center">
-                                            An online registration website for
-                                            <span class="font-weight-bold">Intra-collegiate</span> fest
-                                            <span class="font-weight-bold font-italic">ANTARANG</span>. It has a <span class="font-italic text-uppercase">login system</span>,
-                                            <span class="font-italic text-uppercase">registration form</span>. One can view, update, delete any participants (after login)
-                                        </p>
-                                        <div class="language text-center">
-                                            <span class="h4">Languages Used</span>
-                                            <ul class="list-group list-group-flush font-weight-bold h5">
-                                                <div class="row">
-                                                    <div class="col-md-6">
-                                                        <li class="list-group-item">Node.js</li>
-                                                        <li class="list-group-item">HTML5</li>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <li class="list-group-item">CSS3</li>
-                                                        <li class="list-group-item">Javascript</li>
-                                                    </div>
-                                                </div>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="card-body text-center row pt-0 mt-0">
-                                        <div class="col-md-5 mt-2">
-                                            <span>To see code</span>
-                                            <a href="https://github.com/darshan09200/Antarang-2019" class="card-link" target="_blank">
-                                                <i class="fas fa-arrow-right text-success"></i>
-                                            </a>
-                                        </div>
-                                        <div class="col-md-7 mt-2">
-                                            <span>To download code</span>
-                                            <a href="https://github.com/darshan09200/Antarang-2019/archive/master.zip" class="card-link" target="_blank">
-                                                <i class="fas fa-download"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="col-lg-5 ml-lg-2 mt-4">
-                                <div class="card">
-                                    <!-- <img src="./images/asp.net.png" class="img-fluid card-img-top" alt="..."> -->
-                                    <div class="card-header text-center">
-                                        <span class="h4">Bank Management System</span>
-                                    </div>
-                                    <div class="card-body">
-                                        <p class="card-text text-center">
-                                            It is login based <span class="font-italic font-weight-bold text-uppercase">bank
-                                                management system</span>. It is a <span class="font-italic font-weight-bold text-uppercase">menu driven</span> program. It has features like <span class="font-italic text-capitalize">create
-                                                single account, joint account (with nominee) withdraw, deposit, show
-                                                passbook,
-                                                get new cheque book, generates credit card as well as debit card, cheque
-                                                payment</span>
-                                        </p>
-                                        <div class="language text-center">
-                                            <span class="h4">Language Used</span>
-                                            <ul class="list-group list-group-flush font-weight-bold h5">
-                                                <li class="list-group-item">C</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="card-body text-center row pt-0 mt-0">
-                                        <div class="col-md-5 mt-2">
-                                            <span>To see code</span>
-                                            <a href="https://github.com/darshan09200/Bank-Management-System" class="card-link" target="_blank">
-                                                <i class="fas fa-arrow-right text-success"></i>
-                                            </a>
-                                        </div>
-                                        <div class="col-md-7 mt-2">
-                                            <span>To download code</span>
-                                            <a href="https://github.com/darshan09200/Bank-Management-System/archive/master.zip" class="card-link" target="_blank">
-                                                <i class="fas fa-download"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" offset-md-1 col-md-10">
-                        <div class="row" data-aos="fade-up">
-                            <div class="offset-lg-1 col-lg-5 mr-lg-2 mt-4">
-                                <div class="card">
-                                    <!-- <img src="./images/asp.net.png" class="img-fluid card-img-top" alt="..."> -->
-                                    <div class="card-header text-center">
-                                        <span class="h4">Calendar - Reminders</span>
-                                    </div>
-                                    <div class="card-body">
-                                        <p class="card-text text-center">
-                                            It is a <span class="font-italic font-weight-bold text-uppercase">menu
-                                                driven
-                                                calendar</span>. One can add new reminder, view reminder and delete reminder. One can also see a calendar which is
-                                            <span class="font-italic text-uppercase">automatically generated</span>. It reminds any new event once the program starts.
-                                        </p>
-                                        <div class="language text-center">
-                                            <span class="h4">Language Used</span>
-                                            <ul class="list-group list-group-flush font-weight-bold h5">
-                                                <li class="list-group-item">C++</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="card-body text-center row pt-0 mt-0">
-                                        <div class="col-md-5 mt-2">
-                                            <span>To see code</span>
-                                            <a href="https://github.com/darshan09200/Calendar-Reminders" class="card-link" target="_blank">
-                                                <i class="fas fa-arrow-right text-success"></i>
-                                            </a>
-                                        </div>
-                                        <div class="col-md-7 mt-2">
-                                            <span>To download code</span>
-                                            <a href="https://github.com/darshan09200/Calendar-Reminders/archive/master.zip" class="card-link" target="_blank">
-                                                <i class="fas fa-download"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-5 ml-lg-2 mt-4">
-                                <div class="card">
-                                    <!-- <img src="./images/asp.net.png" class="img-fluid card-img-top" alt="..."> -->
-                                    <div class="card-header text-center">
-                                        <span class="h4">Digital Alphabets</span>
-                                    </div>
-                                    <div class="card-body">
-                                        <p class="card-text text-center">
-                                            It prints alphabets in digital format using
-                                            <a href="https://en.wikipedia.org/wiki/Sixteen-segment_display" target="_blank">Sixteen-segment display technique</a> It prints English language capital Alphabets.
-                                        </p>
-                                        <div class="language text-center">
-                                            <span class="h4">Language Used</span>
-                                            <ul class="list-group list-group-flush font-weight-bold h5">
-                                                <li class="list-group-item">C</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="card-body text-center row pt-0 mt-0">
-                                        <div class="col-md-5 mt-2">
-                                            <span>To see code</span>
-                                            <a href="https://github.com/darshan09200/Digital-Alphabets" class="card-link" target="_blank">
-                                                <i class="fas fa-arrow-right text-success"></i>
-                                            </a>
-                                        </div>
-                                        <div class="col-md-7 mt-2">
-                                            <span>To download code</span>
-                                            <a href="https://github.com/darshan09200/Digital-Alphabets/archive/master.zip" class="card-link" target="_blank">
-                                                <i class="fas fa-download"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <div id="achievements">
-            <div class="container">
-                <div class="row">
-                    <div class="offset-sm-1 col-sm-10 text-center mt-4 mb-2">
-                        <span class="h1 font-weight-bold">
-                            My attainments
-                        </span>
-                    </div>
-                </div>
-                <div class="row mt-2">
-                    <div class="col-12 mt-2" data-aos="fade-up">
-                        <div class="heading mt-2 mb-2 text-center">
-                            <span class="h3">Major Academic Achievements</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mt-2">
-                    <div class="col-lg-6 mt-3" data-aos="fade-right">
-                        <img src="./svg/certificate.svg" class="img-fluid" alt="">
-                    </div>
-
-                    <div class="col-lg-6 mt-3" data-aos="fade-left">
-
-                        <a href="https://drive.google.com/open?id=1Mhtr37V74HjQy8apGuo5_3fMc4TXL00N" target="_blank">
-                            <img class="d-block w-100 img-fluid" src="https://drive.google.com/uc?export=view&id=1KSuD2fHgY30HrMDxkz3QqRf6bJzAIAMB" title="1st Rank in FY BSc.IT" alt="1st Rank in FY BSc.IT">
-                        </a>
-
-                    </div>
-
-                </div>
-                <div class="row mt-2">
-                    <div class="col-12 mt-2" data-aos="fade-up">
-                        <div class="heading mt-2 mb-2 text-center">
-                            <span class="h3">Competitions Won</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mt-2">
-
-                    <div class="col-lg-6 mt-3" data-aos="fade-right">
-                        <div id="certificate-winning-carousel" class="carousel slide" data-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img class="d-block w-100 img-fluid" src="https://drive.google.com/uc?export=view&id=1h_EW4yC5nAznmVC2ByFCV7ONqKAsdt5o" alt="Code Execution Championship">
-                                    <div class="carousel-caption pt-2 pb-2">
-                                        <h5>Code Execution Championship</h5>
-                                        <div><span>1<sup>st</sup> Rank </span></div>
-                                        <div><span>Language - Java</span></div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100 img-fluid" src="https://drive.google.com/uc?export=view&id=1vdmxnqNrx-pUS80yzOLEsEvcES9nJpc1" alt="S-Tek Pro Contest">
-                                    <div class="carousel-caption pt-2 pb-2">
-                                        <h5>S-Tek Pro Contest</h5>
-                                        <div><span>1<sup>st</sup> Rank </span></div>
-                                        <div><span>Language - C</span></div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100 img-fluid" src="https://drive.google.com/uc?export=view&id=1Mosuixz8GjYkzrYB30Z5kqqhnJ-MM8_6" alt="War of Code - Dalmia Lions Utsav">
-                                    <div class="carousel-caption pt-2 pb-2">
-                                        <h5>War of Code - Dalmia Lions Utsav</h5>
-                                        <div><span>3<sup>rd</sup> Rank </span></div>
-                                        <div><span>Language - C, C++, Java</span></div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100 img-fluid" src="https://drive.google.com/uc?export=view&id=1fCthSidIecAZL8u5J_Fr48GC7DpjfBqG" alt="Weblink Utsav">
-                                    <div class="carousel-caption pt-2 pb-2">
-                                        <h5>Weblink Utsav</h5>
-                                        <div><span>1<sup>st</sup> Rank </span></div>
-                                        <div><span>Language - Java</span></div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <img class="d-block w-100 img-fluid" src="./images/certificates.png" alt="View all">
-                                    <div class="carousel-caption pt-2 pb-2">
-                                        <h5>View all</h5>
-                                        <p>
-                                            <span> See all certificates</span>
-                                            <a href="https://drive.google.com/open?id=1Mhtr37V74HjQy8apGuo5_3fMc4TXL00N" target="_blank">
-                                                here <i class="fas fa-arrow-right text-info"></i>
-                                            </a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <a class="carousel-control-prev" href="#certificate-winning-carousel" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#certificate-winning-carousel" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 mt-3" data-aos="fade-left">
-                        <img src="./svg//winners.svg" class="img-fluid" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="contact-me">
-            <div class="container">
-                <div class="row">
-                    <div class="offset-sm-1 col-sm-10 text-center mt-4 mb-2">
-                        <span class="h1 font-weight-bold">
-                            Find me on
-                        </span>
-                    </div>
-                </div>
-                <div class="row mt-4 mb-4">
-                    <div class="offset-lg-1 col-lg-5 text-center" data-aos="fade-down">
-                        <img class="img-fluid" src="./svg/contact_us.svg" alt="">
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="contact-form" data-aos="fade-up">
-                            <div class="form-group">
-                                <!-- <label for="subject">Subject</label> -->
-                                <input type="text" class="form-control px-3" id="name" placeholder="Name" style="border-radius: 50px;">
-
-                            </div>
-                            <div class="form-group">
-                                <!-- <label for="subject">Subject</label> -->
-                                <input type="text" class="form-control px-3" id="subject" placeholder="Subject" style="border-radius: 50px;">
-
-                            </div>
-                            <div class="form-group">
-                                <!-- <label for="body">Message</label> -->
-                                <textarea class="form-control px-3 pt-2" id="body" placeholder="Message" style="border-radius: 20px; min-height: 150px; max-height: 150px;"></textarea>
-                            </div>
-                            <button type="button" class="btn btn-primary px-3 pt-2 pb-2" style="border-radius: 50px;" id="send-msg">
-                                <span>Send message</span>
-                                <i class="fas fa-paper-plane"></i>
-                            </button>
-                            <a id="send-mail" href=""></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="snackbar"></div>
-
-
-    <script src="./add-ons/jquery/jquery.min.js"></script>
-    <script src="./add-ons/jquery/popper.min.js"></script>
-    <script src="./add-ons/bootstrap/bootstrap.min.js"></script>
-
-    <script src="./add-ons/fontawesome-free-5.11.2-web/js/all.min.js" data-auto-replace-svg="nest"></script>
-
-    <script src="./add-ons/typed/typed.js"></script>
-    <script src="./add-ons/aos/aos.js"></script>
-
-    <script src="./js/main.js"></script>
-
-    <script>
-        $(document).ready(function() {
-            var time = new Date().getTime() % 11;
-            $('.preloaders').css('background-image', 'url("../gif/loading-' + time.toString() + '.gif")');
-            $('.bg').hide()
-            $('body').addClass('overflow-hidden')
-            $('.main').hide()
-        });
-        $(window).on('load', function() {
-            $('body').removeClass('overflow-hidden')
-            $('.preloaders').fadeOut('slow');
-            $('.bg').show()
-            $('.main').show()
-            AOS.init({
-                duration: 700
-            });
-        });
-    </script>
-
-
+		if (location.hash) {
+			const id = location.hash.replace('#', '');
+			const el = document.getElementById(id);
+			if (el) active(id);
+		}
+	</script>
 </body>
 
 </html>
