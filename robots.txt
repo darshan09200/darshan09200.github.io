@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://darshan09200.github.io/sitemap.xml
+Sitemap: https://darshan09200.github.io/react-native-global-exception-handler/sitemap.xml
