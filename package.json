@@ -1,0 +1,36 @@
+{
+  "name": "darshan09200.github.io",
+  "version": "1.0.0",
+  "description": "Personal portfolio website — built with Tailwind CSS v4 and hosted on GitHub Pages.",
+  "private": true,
+  "scripts": {
+    "build:css": "npx @tailwindcss/cli -i ./css/input.css -o ./css/styles.css --minify",
+    "dev": "yarn build:css --watch",
+    "clean": "rm -f ./css/styles.css",
+    "postinstall": "yarn build:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darshan09200/darshan09200.github.io.git"
+  },
+  "keywords": [
+    "portfolio",
+    "tailwindcss",
+    "dark-mode",
+    "react-native",
+    "mobile-developer",
+    "software-engineer",
+    "web-engineer",
+    "developer-site"
+  ],
+  "author": "Darshan Jain <djainj86@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/darshan09200/darshan09200.github.io/issues"
+  },
+  "homepage": "https://darshan09200.github.io",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.16",
+    "tailwindcss": "^4.1.16"
+  }
+}
