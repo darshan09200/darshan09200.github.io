@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>https://darshan09200.dev/</loc>
-		<lastmod>2025-10-27</lastmod>
+		<loc>https://www.darshan09200.dev/</loc>
+		<lastmod>2025-10-28</lastmod>
 		<priority>1.0</priority>
 	</url>
 	<url>
-		<loc>https://darshan09200.dev/#about</loc>
+		<loc>https://www.darshan09200.dev/#about</loc>
 		<priority>0.8</priority>
 	</url>
 	<url>
-		<loc>https://darshan09200.dev/#work</loc>
+		<loc>https://www.darshan09200.dev/#work</loc>
 		<priority>0.8</priority>
 	</url>
 	<url>
-		<loc>https://darshan09200.dev/#skills</loc>
+		<loc>https://www.darshan09200.dev/#skills</loc>
 		<priority>0.7</priority>
 	</url>
 	<url>
-		<loc>https://darshan09200.dev/#experience</loc>
+		<loc>https://www.darshan09200.dev/#experience</loc>
 		<priority>0.7</priority>
 	</url>
 	<url>
-		<loc>https://darshan09200.dev/#writing</loc>
+		<loc>https://www.darshan09200.dev/#writing</loc>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>https://darshan09200.dev/#contact</loc>
+		<loc>https://www.darshan09200.dev/#contact</loc>
 		<priority>0.6</priority>
 	</url>
 </urlset>

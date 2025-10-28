@@ -28,7 +28,7 @@
   "bugs": {
     "url": "https://github.com/darshan09200/darshan09200.github.io/issues"
   },
-  "homepage": "https://darshan09200.dev",
+  "homepage": "https://www.darshan09200.dev",
   "devDependencies": {
     "@tailwindcss/cli": "^4.1.16",
     "tailwindcss": "^4.1.16"
